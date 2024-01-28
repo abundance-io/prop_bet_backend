@@ -10,6 +10,7 @@ COPY ["package.json", "yarn.lock", "tsconfig.json", ".env", "./"]
 
 # Copies everything in the src directory to WORKDIR/src
 COPY ./src ./src
+COPY ./prisma ./
 
 # Installs all packages
 RUN npm install yarn

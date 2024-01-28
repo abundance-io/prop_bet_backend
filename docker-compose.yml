@@ -1,9 +1,9 @@
 services:
-  backend:
+  web:
     build: .
-    command: bash -c ''
+    # command:
     volumes:
-      - .:/prop_bet_backend
+      - .:/src
     # ports:
     #   - 8008:8000
     environment:
